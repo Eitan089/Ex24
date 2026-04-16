@@ -37,10 +37,7 @@ function buildTableFromImages(dataArray) {
 
     const td = document.createElement("td");
     td.style.textAlign = "center";
-    td.innerHTML = `
-            <p>${textVal}</p>
-            <img src="${imgSrc}" width="${sizeVal}" height="${sizeVal}" alt="${textVal}">
-        `;
+    td.innerHTML = `<p>${textVal}</p> <img src="${imgSrc}" width="${sizeVal}" height="${sizeVal}" alt="${textVal}">`;
 
     row.appendChild(td);
   }
