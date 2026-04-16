@@ -27,17 +27,17 @@ function DrawTable(arr) {
   }
 }
 
-function buildTableFromImages(dataArray) {
+function buildTableFromImages(arr) {
   const table = document.getElementById("tbl3");
   const row = document.createElement("tr");
-  for (let i = 0; i < dataArray.length; i += 3) {
-    let textVal = dataArray[i];
-    let imgSrc = dataArray[i + 1];
-    let sizeVal = dataArray[i + 2];
+  for (let i = 0; i < arr.length; i += 3) {
+    let text = arr[i];
+    let imgSrc = arr[i + 1];
+    let size = arr[i + 2];
 
     const td = document.createElement("td");
     td.style.textAlign = "center";
-    td.innerHTML = `<p>${textVal}</p> <img src="${imgSrc}" width="${sizeVal}" height="${sizeVal}" alt="${textVal}">`;
+    td.innerHTML = `<p>${text}</p> <img src="${imgSrc}" width="${size}" height="${size}" alt="${text}">`;
 
     row.appendChild(td);
   }
